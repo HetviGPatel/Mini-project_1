@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar-Based Banking Form</title>
+    <link rel="stylesheet" href="adh.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Aadhaar-Based Banking Form</h2>
+        <div class="form-group">
+            <label for="aadhaarUpload">Upload Aadhaar Card</label>
+            <input type="file" id="aadhaarUpload" accept="image/*">
+        </div>
+        <button type="button" id="extractDetails">Upload and Extract Details</button>
+        <form id="bankingForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="" disabled selected>Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="aadhaarNumber">Aadhaar Number</label>
+                <input type="text" id="aadhaarNumber" placeholder="Enter Aadhaar number">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" rows="3" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="accountType">Account Type</label>
+                <select id="accountType">
+                    <option value="" disabled selected>Select account type</option>
+                    <option value="Savings">Savings</option>
+                    <option value="Current">Current</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="branchCode">Branch Code</label>
+                <input type="text" id="branchCode" placeholder="Enter branch code">
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" placeholder="Enter phone number">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
